@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.ritikaneema.example.helloandroid.MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/udacity"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:textSize="@dimen/textSize50"
-        android:textColor="@color/black"/>
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-       >
+        android:layout_height="wrap_content">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewPager"
@@ -33,7 +21,8 @@
             android:id="@+id/SliderDots"
             android:layout_below="@+id/viewPager"
             android:orientation="horizontal"
-            android:paddingTop="@dimen/padding4"
+            android:paddingTop="@dimen/padding20"
+            android:paddingBottom="@dimen/padding16"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -43,16 +32,33 @@
     <LinearLayout android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:paddingTop="@dimen/padding32"
+        >
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_building"
+            android:padding="@dimen/padding16"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/udacity"
+            android:textColor="@color/colorAccent"
+            android:padding="@dimen/padding16"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
         <ImageView android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_website"
-            android:padding="@dimen/padding8"/>
+            android:padding="@dimen/padding16"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/website"
-            android:padding="@dimen/padding8"
+            android:padding="@dimen/padding16"
             android:autoLink="web"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
     </LinearLayout>
@@ -60,36 +66,34 @@
     <LinearLayout android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_weight="1"
-        >
+       >
         <ImageView android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_map_marker"
-            android:padding="@dimen/padding8"/>
+            android:padding="@dimen/padding16"/>
          <TextView
              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/location"
              android:autoLink="map"
-             android:padding="@dimen/padding8"/>
+             android:padding="@dimen/padding16"/>
     </LinearLayout>
 
     <LinearLayout android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_weight="1">
+       >
         <ImageView android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_phone"
-            android:padding="@dimen/padding8"
-            />
+            android:padding="@dimen/padding16" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/phoneNo"
             android:autoLink="phone"
-            android:padding="@dimen/padding8"
+            android:padding="@dimen/padding16"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
     </LinearLayout>
 
