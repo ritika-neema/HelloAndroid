@@ -14,87 +14,100 @@
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="@dimen/viewPagerHt"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
 
         <LinearLayout
             android:id="@+id/SliderDots"
-            android:layout_below="@+id/viewPager"
-            android:orientation="horizontal"
-            android:paddingTop="@dimen/padding20"
-            android:paddingBottom="@dimen/padding16"
-            android:gravity="center_horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewPager"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding16"
+            android:paddingTop="@dimen/padding20" />
 
     </RelativeLayout>
 
-    <LinearLayout android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="@dimen/padding32"
-        >
-        <ImageView android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding32">
+
+        <ImageView
             android:layout_width="wrap_content"
-            android:src="@drawable/ic_building"
-            android:padding="@dimen/padding16"/>
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding16"
+            android:src="@drawable/ic_building" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/padding16"
             android:text="@string/udacity"
-            android:textColor="@color/colorAccent"
-            android:padding="@dimen/padding16"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
-    <LinearLayout android:layout_height="wrap_content"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        >
-        <ImageView android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
             android:layout_width="wrap_content"
-            android:src="@drawable/ic_website"
-            android:padding="@dimen/padding16"/>
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding16"
+            android:src="@drawable/ic_website" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/website"
-            android:padding="@dimen/padding16"
             android:autoLink="web"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            android:padding="@dimen/padding16"
+            android:text="@string/website"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
     </LinearLayout>
 
-    <LinearLayout android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-       >
-        <ImageView android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_map_marker"
-            android:padding="@dimen/padding16"/>
-         <TextView
-             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/location"
-             android:autoLink="map"
-             android:padding="@dimen/padding16"/>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <LinearLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-       >
-        <ImageView android:layout_height="wrap_content"
+        <ImageView
             android:layout_width="wrap_content"
-            android:src="@drawable/ic_phone"
-            android:padding="@dimen/padding16" />
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding16"
+            android:src="@drawable/ic_map_marker" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/phoneNo"
+            android:autoLink="map"
+            android:padding="@dimen/padding16"
+            android:text="@string/location"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding16"
+            android:src="@drawable/ic_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:autoLink="phone"
             android:padding="@dimen/padding16"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            android:text="@string/phoneNo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
     </LinearLayout>
 
 </LinearLayout>
