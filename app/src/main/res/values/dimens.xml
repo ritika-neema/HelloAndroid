@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="padding32">32dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding16">16dp</dimen>
     <dimen name="padding8">8dp</dimen>
     <dimen name="padding4">4dp</dimen>
     <dimen name="textSize50">50sp</dimen>
-    <dimen name="viewPagerHt">190dp</dimen>
+    <dimen name="viewPagerHt">189dp</dimen>
 </resources>

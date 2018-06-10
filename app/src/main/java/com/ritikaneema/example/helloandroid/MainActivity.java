@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout sliderDotspanel;
     private int dotscount;
     private ImageView[] dots;
+    public int autoslideTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,14 +80,20 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
 
-                    if(viewPager.getCurrentItem() == 0){
-                        viewPager.setCurrentItem(1);
-                    } else if(viewPager.getCurrentItem() == 1){
-                        viewPager.setCurrentItem(2);
-                    } else if(viewPager.getCurrentItem() == 2) {
-                        viewPager.setCurrentItem(3);
-                    }else if(viewPager.getCurrentItem() == 3) {
-                        viewPager.setCurrentItem(0);
+                    if(autoslideTracker <= 3) {
+                        if (viewPager.getCurrentItem() == 0) {
+                            viewPager.setCurrentItem(1);
+                            autoslideTracker++;
+                        } else if (viewPager.getCurrentItem() == 1) {
+                            viewPager.setCurrentItem(2);
+                            autoslideTracker++;
+                        } else if (viewPager.getCurrentItem() == 2) {
+                            viewPager.setCurrentItem(3);
+                            autoslideTracker++;
+                        } else if (viewPager.getCurrentItem() == 3) {
+                            viewPager.setCurrentItem(0);
+                            autoslideTracker++;
+                        }
                     }
 
                 }
