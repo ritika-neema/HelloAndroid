@@ -16,7 +16,9 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private int[] images = { R.drawable.udacity4, R.drawable.udacity6, R.drawable.udacity5,  R.drawable.udacity3};
+
+    private int[] images = {R.drawable.udacity4, R.drawable.udacity6, R.drawable.udacity5, R.drawable.udacity3};
+
 
     public ViewPagerAdapter(Context context) {
         this.context = context;
@@ -29,19 +31,19 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return view==object;
+        return view == object;
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.custom_layout,null);
+        View view = layoutInflater.inflate(R.layout.custom_layout, null);
 
         ImageView imageView = view.findViewById(R.id.imageView2);
         imageView.setImageResource(images[position]);
 
-        ViewPager vp = (ViewPager)container;
-        vp.addView(view,0);
+        ViewPager vp = (ViewPager) container;
+        vp.addView(view, 0);
         return view;
     }
 

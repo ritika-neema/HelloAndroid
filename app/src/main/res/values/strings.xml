@@ -6,4 +6,13 @@ Mountain View, CA 94043</string>
     <string name="udacity">Udacity</string>
     <string name="phoneNo">650-555-5555</string>
     <string name="website">www.udacity.com</string>
+    <string name="description"><b>About us:</b>
+       \nUdacity, a pioneer in online education, is building "University by Silicon Valley", a new type of online university that:
+\n- teaches the actual programming skills that industry employers need today;
+\n- delivers credentials endorsed by employers, because they built them;
+\n- provides education at a fraction of the cost and time of traditional schools.
+\n
+\nWith industry giants - Google, AT&amp;T, Facebook, Salesforce, Cloudera, etc. - we offer Nanodegree credentials, designed so professionals become Web Developers, Data Analysts, or Mobile Developers.
+        \nSupported by our communities of coaches and students, our students learn programming and data science through a series of online courses and hand-on projects that help them practice and build a convincing portfolio.
+</string>
 </resources>
